@@ -82,6 +82,12 @@ sub { bottom: -.25em; }
 .cf { *zoom: 1; }
 
 /*for all*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   box-sizing: border-box;
   font-family: sans-serif;
@@ -104,51 +110,85 @@ li {
   margin: 0 auto;
 }
 /*=================================
-  Header styling starts here
-=================================*/
-
-
-
-
-
-
-/*=================================
-  Header styling ends here
-=================================*/  
-
-/*=================================
   main styling starts here
 =================================*/
 
+/* passwordGenerator section start */
+.password-generator {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(59,59,152);
+}
 
+.password-generator .wrapper {
+  width: 26%;
+}
 
+.generator-card { 
+  padding: 20px;
+  background: rgb(35,35,91);
+  color: rgb(255,255,255);
+  box-shadow: 0 2px 7px rgb(255,255,255,0.2);
+}
 
+.heading {
+  padding: 10px 0;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: capitalize;
+}
 
+.output-area {
+  padding: 7px 2%;
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(21,21,55);
+}
 
+.output {
+  padding-left: 3%;
+  font-size: 18px;
+}
 
+.copy-pass {
+  text-indent: -9999px;
+}
+
+.copy-pass::before {
+  content: '\f328';
+  padding: 12px 14px;
+  font-family: "FontAwesome";
+  background: rgb(59,59,152);
+  color: rgb(255,255,255);
+  float: left;
+  font-size: 18px;
+  text-indent: 0;
+}
+
+.input-group {
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input-control input {
+  width: 100%;
+  padding: 8px 0;
+  border: none;
+  outline: none;
+  background: rgb(59,59,152);
+  color: rgb(255,255,255);
+  font-size: 16px;
+}
+
+/* passwordGenerator section end */
 
 /*=================================
   main styling ends here
 =================================*/
-
-/*=================================
-  footer styling starts here
-=================================*/ 
-
-
-
-
-
-
-
- /*=================================
-  footer styling ends here
-=================================*/ 
-
-/*media query starts*/
-/*media query for 995px starts here*/
-@media only screen and (max-width: 995px) {
-
-
-
-}  
